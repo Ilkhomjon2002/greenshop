@@ -1,0 +1,58 @@
+export const data = [
+	{
+		id: 1,
+		name: "Ilkhomjon",
+		age: 20,
+		address: "tashkent",
+		status: "BC",
+	},
+	{
+		id: 2,
+		name: "Aziz",
+		age: 21,
+		address: "Qashqadaryo",
+		status: "MS",
+	},
+	{
+		id: 3,
+		name: "Azim",
+		age: 22,
+		address: "Samarqand",
+		status: "CS",
+	},
+	{
+		id: 4,
+		name: "Jamshid",
+		age: 21,
+		address: "Qoraqalpogiston",
+		status: "BC",
+	},
+	{
+		id: 5,
+		name: "Shoxrux",
+		age: 21,
+		address: "Qashqadaryo",
+		status: "BC",
+	},
+	{
+		id: 6,
+		name: "Farhod",
+		age: 26,
+		address: "Fargona",
+		status: "MS",
+	},
+	{
+		id: 7,
+		name: "Jamshid",
+		age: 22,
+		address: "Samarqand",
+		status: "CS",
+	},
+	{
+		id: 8,
+		name: "Sirojiddin",
+		age: 21,
+		address: "Andijon",
+		status: "BC",
+	},
+];
