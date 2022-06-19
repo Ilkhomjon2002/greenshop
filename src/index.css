@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -19,20 +21,51 @@ body {
 	position: fixed;
 	background-color: whitesmoke;
 	text-align: left;
+	width: 720px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
-
+table {
+	width: 724px;
+}
+.buttons {
+	margin: 0;
+}
+button {
+	border: none;
+	padding: 10px;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+button:hover {
+	background-color: black;
+	color: whitesmoke;
+	cursor: pointer;
+}
 tr {
 	display: grid;
-	grid-template-columns: repeat(5, 120px);
+	align-items: center;
+	grid-template-columns: repeat(6, 120px);
 	padding: 20px 0;
 }
 tr:not(tr:first-child) {
 	border-top: 1px solid rgba(128, 128, 128, 0.178);
 }
-tr:nth-child(2) {
+
+.table-body tr:nth-child(1) {
 	margin-top: 58.4px;
 }
 td,
 th {
 	margin: 0 20px;
+}
+.inputs {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.inputs input {
+	outline: none;
+	padding: 5px 10px;
 }
