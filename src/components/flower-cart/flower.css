@@ -1,0 +1,56 @@
+.flower-cart {
+	width: 70%;
+}
+.search-types {
+	justify-content: flex-start !important;
+}
+.search-types p {
+	margin: 20px;
+	color: grey;
+	cursor: pointer;
+}
+.img-container {
+	width: 250px;
+	height: 250px;
+	padding: 30px;
+
+	position: relative;
+}
+.img-container img {
+	width: 100%;
+}
+.img-container span {
+	padding: 5px 10px;
+	background-color: green;
+	color: white;
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+.info {
+	color: grey;
+	padding: 0 30px;
+}
+.price p {
+	margin-right: 20px;
+}
+.price p:first-child {
+	color: green;
+}
+.price .real-price {
+	text-decoration: line-through;
+}
+
+.active-button {
+	color: green !important;
+	position: relative;
+}
+.active-button::after {
+	background-color: green;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	content: "";
+}

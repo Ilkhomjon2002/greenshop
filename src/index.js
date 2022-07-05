@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { data } from "./data";
-import { TableComponent } from "./table-component";
-
+import App from "./app";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<TableComponent data={data}></TableComponent>
-		{/* <Practise></Practise> */}
+		<App></App>
 	</React.StrictMode>
 );

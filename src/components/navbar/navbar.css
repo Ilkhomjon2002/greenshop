@@ -1,0 +1,44 @@
+:root {
+	--main-color: rgb(1, 146, 1);
+}
+
+.links {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+	font-size: 18px;
+}
+.link {
+	position: relative;
+	color: rgb(71, 71, 71);
+	text-decoration: none;
+}
+.link-2 {
+	position: relative;
+	color: black;
+	text-decoration: none;
+}
+.link-2::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: var(--main-color);
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	z-index: 1;
+}
+.logo {
+	color: var(--main-color);
+	font-size: 25px;
+	font-weight: 900;
+}
+.login {
+	color: white;
+	border: none;
+	background-color: var(--main-color);
+	font-size: 16px;
+	padding: 5px 15px;
+	border-radius: 4px;
+}
