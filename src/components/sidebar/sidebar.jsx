@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Container, SideBarContainer } from "../../container";
 import { SideBarContext } from "../../context/context";
 
-import { NavLink, Route, Switch } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import "./sidebar.css";
 import { Carts } from "../flower-cart/flower";
 export const Sidebar = () => {

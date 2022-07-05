@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
-import { FlowerContext, CartContext } from "../../context/context";
+import { FlowerContext } from "../../context/context";
 import { Column, Row, CartContainer, Grid } from "../../container";
 import "./flower.css";
 export const Carts = () => {
