@@ -68,6 +68,15 @@ export const data = [
 		new: false,
 		type: "House Plants",
 	},
+	{
+		id: 8,
+		name: "Aluminium Plant",
+		price: 179,
+		src: img6,
+		sale: 0,
+		new: false,
+		type: "Gardening",
+	},
 ];
 
 export const content = [

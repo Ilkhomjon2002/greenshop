@@ -2,11 +2,13 @@ import { useContext } from "react";
 import { Container, SideBarContainer } from "../../container";
 import { SideBarContext } from "../../context/context";
 
-import { NavLink, Route } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import "./sidebar.css";
-import { Carts } from "../flower-cart/flower";
+import { useEffect } from "react";
 export const Sidebar = () => {
 	const [data, setData] = useContext(SideBarContext);
+	const navigate = useNavigate();
+	useEffect(() => navigate("/home/House-Plants"), []);
 	return (
 		<Container>
 			<SideBarContainer>
@@ -16,10 +18,10 @@ export const Sidebar = () => {
 						return (
 							<NavLink
 								key={val.name}
-								className={(isActive) =>
+								className={({ isActive }) =>
 									isActive ? "activeSideBar" : "notActiveSideBar"
 								}
-								to={"/home/" + val.name}
+								to={"/home/" + val.name.split(" ").join("-")}
 							>
 								<p>{val.name}</p>
 								<p>({val.quantity})</p>
@@ -28,10 +30,7 @@ export const Sidebar = () => {
 					})}
 				</div>
 			</SideBarContainer>
-
-			<Route path={"/home/:id"}>
-				<Carts></Carts>
-			</Route>
+			<Outlet></Outlet>
 		</Container>
 	);
 };

@@ -1,36 +1,32 @@
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import {
+	BrowserRouter,
+	Navigate,
+	Route,
+	Routes,
+	useRoutes,
+} from "react-router-dom";
 import { Context } from "./context/context";
 import { Navbar } from "./components/navbar/navbar";
 import Home from "./components/home/home";
 import Shop from "./components/shop/shop";
+import React from "react";
+import { Carts } from "./components/flower-cart/flower";
 const App = () => {
 	return (
-		<BrowserRouter>
-			<Context>
-				<Route exact path={"/"} component={Navbar} />
-				<Route path={"/home"} component={Navbar} />
-				<Route path={"/shop"} component={Navbar} />
-				<Route path={"/about"} component={Navbar} />
-				<Route path={"/students"} component={Navbar} />
-				<Switch>
-					<Route exact path={"/"}>
-						<Redirect to={"/home"}></Redirect>
+		<Context>
+			<Routes>
+				<Route element={<Navbar></Navbar>}>
+					<Route path={"/"} element={<Navigate to={"/home"} />} />
+					<Route path={"/home"} element={<Home />}>
+						<Route path={":id"} element={<Carts></Carts>}></Route>
 					</Route>
-					<Route path={"/home"} component={Home} />
-
-					<Route path={"/shop"}>
-						<Shop></Shop>
-					</Route>
-					<Route path={"/about"}>
-						<h1>About Page</h1>
-					</Route>
+					<Route path={"/shop"} element={<Shop />} />
+					<Route path={"/about"}></Route>
 					<Route path={"/students"}></Route>
-					<Route path={"*"}>
-						<h1>Not Found</h1>
-					</Route>
-				</Switch>
-			</Context>
-		</BrowserRouter>
+					<Route path={"*"} element={<h1>Not Found</h1>}></Route>
+				</Route>
+			</Routes>
+		</Context>
 	);
 };
 

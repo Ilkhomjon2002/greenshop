@@ -22,7 +22,7 @@ const NavBarContainer = styled(Container)`
 	}
 `;
 const SideBarContainer = styled.div`
-	background-color: gainsboro;
+	background-color: #fbfbfb;
 	padding: 10px;
 	width: 25%;
 `;
@@ -37,6 +37,7 @@ const Column = styled.div`
 `;
 const Row = styled(Column)`
 	flex-direction: row;
+	align-items: center;
 `;
 const Grid = styled.div`
 	display: grid;

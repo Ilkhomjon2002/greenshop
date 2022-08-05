@@ -1,0 +1,37 @@
+.inc-dec button {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.table-row {
+	background: #fbfbfb;
+}
+tr td {
+	padding: 0 20px;
+}
+.price h1 {
+	color: #727272;
+	font-size: 18px;
+}
+.quantity {
+	color: #3d3d3d;
+	font-size: 19px;
+}
+.inc-dec {
+	width: 120px;
+	align-items: center;
+	justify-content: space-between;
+}
+.inc-dec button {
+	margin: 0 auto;
+}
+.total {
+	color: #46a358;
+	font-size: 18px;
+	font-weight: 700;
+}
+.del {
+	color: #727272;
+	background-color: #fbfbfb;
+}

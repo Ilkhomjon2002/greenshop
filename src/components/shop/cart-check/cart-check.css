@@ -1,0 +1,67 @@
+.coupon-container {
+	padding: 10px 20px 20px;
+	width: 30%;
+}
+.checkout-title {
+	font-size: 20px;
+	font-weight: 700;
+	color: #3d3d3d;
+	padding-bottom: 10px;
+	position: relative;
+}
+.checkout-title::after {
+	content: "";
+	position: absolute;
+	background-color: #46a35980;
+	height: 1px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.coupon h3 {
+	font-size: 16px;
+	color: #3d3d3d;
+	font-weight: 500;
+}
+.coupon input {
+	border: none;
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 3px 0 0 3px;
+	width: 100%;
+	outline: #46a358 2px solid;
+}
+.coupon button {
+	font-size: 14px;
+	border: #46a358 2px solid;
+	border-radius: 0 3px 3px 0;
+	padding: 8px 12px;
+}
+.space {
+	justify-content: space-between !important;
+	padding: 0 5px;
+}
+
+.add-coupon {
+	margin-bottom: 25px;
+}
+.coupon h3 {
+	font-size: 16px;
+	margin: 10px 0 10px 0;
+}
+.total {
+	margin-top: 30px;
+}
+.total p {
+	color: #3d3d3d;
+}
+.checkout-btn {
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 3px !important;
+}
+.continue {
+	color: #46a358;
+	background-color: white;
+	border: none !important;
+}
